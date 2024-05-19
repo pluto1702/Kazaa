@@ -3,9 +3,11 @@ import { PreloadAllModules, Route, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PageNotFoundComponent } from './PageNotFound/page-not-found.component';
 import { AuthComponent } from './auth/auth.component';
+import { KazaaMainComponent } from './kazaa-main/kazaa-main.component';
 
 const appRoutes: Route[] = [
-  { path: '', component: LandingPageComponent, pathMatch: 'full' },
+  { path: 'landing', component: LandingPageComponent, pathMatch: 'full' },
+  { path: '', component: KazaaMainComponent },
   { path: 'auth', component: AuthComponent },
   { path: '**', component: PageNotFoundComponent },
 ];

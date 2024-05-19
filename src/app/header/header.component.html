@@ -7,13 +7,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item" routerLinkActive="active"><a class="nav-link" style="cursor: pointer" routerLink="">Files</a></li>
-                <li class="nav-item" routerLinkActive="active"><a class="nav-link" style="cursor: pointer" routerLink="">Link2</a></li>
+                <li class="nav-item" routerLinkActive="active"><a class="nav-link" style="cursor: pointer" routerLink="">Home</a></li>
+                <li class="nav-item" routerLinkActive="active"><a class="nav-link" style="cursor: pointer" routerLink="/404">Link2</a></li>
             </ul>
             <ul class="navbar-nav ms-auto ml-auto" >
-                <li class="nav-item" (click)="logout()"><a class="nav-link" style="cursor: pointer" *ngIf="isAuthenticated">Logout</a></li>
+                <li class="nav-item"><a class="nav-link" style="cursor: pointer" *ngIf="user">{{user}}</a></li>
+                <li class="nav-item" (click)="logout()"><a class="nav-link" style="cursor: pointer; background-color: orange;color: #fff; font-weight: bolder; border-radius: 9px;" *ngIf="isAuthenticated">Logout</a></li>
                 <li class="nav-item" routerLinkActive="active"><a class="nav-link" style="cursor: pointer" *ngIf="!isAuthenticated"
-                        routerLink="/auth">Authenticate</a>
+                        routerLink="/auth">Login/SignUp</a>
                 </li>
             </ul>
         </div>

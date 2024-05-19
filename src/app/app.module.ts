@@ -12,6 +12,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingSpinner } from './loading-spinner/loading-spinner.component';
 import { AlertComponent } from './shared/alert/alert.component';
+import { KazaaMainComponent } from './kazaa-main/kazaa-main.component';
+import { SearchAreaComponent } from './kazaa-main/search-area/search-area.component';
+import { FileAreaComponent } from './kazaa-main/file-area/file-area.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { AlertComponent } from './shared/alert/alert.component';
     HeaderComponent,
     Dropdown,
     PageNotFoundComponent,
+    KazaaMainComponent,
+    SearchAreaComponent,
+    FileAreaComponent,
     AuthComponent,
     LoadingSpinner,
     AlertComponent,

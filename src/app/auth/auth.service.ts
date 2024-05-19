@@ -69,7 +69,8 @@ export class AuthService {
 
   logout() {
     this.user.next(null);
-    this.router.navigate(['/auth']);
+    this.router.navigate(['']);
+    alert('Logged out successfully. Danko');
     this.isLoggedIn = false;
   }
 
